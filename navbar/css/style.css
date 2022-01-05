@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* 全体レイアウト
+--------------------------------------- */
+.header{
+  margin-bottom: 100px;
+}
+.wrap{
+  width: 100%;
+  margin: 0 auto;
+}
+img{
+  width: 100%;
+}
+.mainvisual{
+  width: 100%;
+}
+.cont{
+  width: 85%;
+  height: 500px;
+  margin: 50px auto 0;
+}
+.cont p{
+  background-color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+#concept{
+  background:deeppink;
+}
+#work{
+  background:deepskyblue;
+}
+#contact{
+  background:greenyellow;
+}
+footer{
+  height: 500px;
+}
+
+/* ナビバー
+--------------------------------------- */
+.global-nav {
+  height: 50px;
+  box-shadow: 0 5px 5px rgba(0,0,0,.2);
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.global-nav__list {
+  display: flex;
+  justify-content: center;
+}
+.global-nav__list li {
+  padding: 0 50px;
+}
+.global-nav__list li a {
+  display: block;
+  line-height: 50px;
+  color: #111;
+}
+
+.global-nav.clone-nav {  /*画面の外に隠す*/
+  position: fixed;
+  top: -100px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0,0,0,.2);
+  z-index: 2;
+}
+.global-nav.clone-nav.is-fixed-nav {
+  top: 0px;
+}
