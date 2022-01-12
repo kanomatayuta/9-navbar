@@ -3,7 +3,7 @@
 /* 全体レイアウト
 --------------------------------------- */
 .header{
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 .wrap{
   width: 100%;
@@ -18,9 +18,10 @@ img{
 .cont{
   width: 85%;
   height: 500px;
-  margin: 50px auto 0;
+  margin: 0 auto;
 }
 .cont p{
+  padding-top: 50px;
   background-color: white;
   font-size: 1.5rem;
   font-weight: bold;
@@ -44,9 +45,7 @@ footer{
 .global-nav {
   height: 50px;
   box-shadow: 0 5px 5px rgba(0,0,0,.2);
-  position: absolute;
   width: 100%;
-  z-index: 1;
 }
 .global-nav__list {
   display: flex;
@@ -61,14 +60,12 @@ footer{
   color: #111;
 }
 
-.global-nav.clone-nav {  /*画面の外に隠す*/
+/* ナビバー固定 */
+.fixed {
   position: fixed;
-  top: -100px;
+  width: 100%;
+  top: 0;
   left: 0;
   background-color: #fff;
   box-shadow: 0 2px 2px rgba(0,0,0,.2);
-  z-index: 2;
-}
-.global-nav.clone-nav.is-fixed-nav {
-  top: 0px;
 }
